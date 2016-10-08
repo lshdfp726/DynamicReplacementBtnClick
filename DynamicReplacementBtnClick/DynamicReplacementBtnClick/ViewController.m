@@ -18,13 +18,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear: animated];
+     self.limitBtn.isOpen = YES;
+}
+
+- (IBAction)jumpAction:(id)sender {
+    OtherVCViewController *vc = [[OtherVCViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
 - (IBAction)clickAction:(id)sender {
     NSLog(@"正常点击");
-    OtherVCViewController *vc = [[OtherVCViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 

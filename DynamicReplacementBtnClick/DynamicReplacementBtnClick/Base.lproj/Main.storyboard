@@ -29,14 +29,30 @@
                                     <action selector="clickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RbQ-vJ-WIM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXJ-K1-w8N">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="YGq-xi-Rbn"/>
+                                    <constraint firstAttribute="width" constant="150" id="keL-vS-SIl"/>
+                                </constraints>
+                                <state key="normal" title="跳转按钮"/>
+                                <connections>
+                                    <action selector="jumpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFm-Fm-1Tp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Etj-2D-MZk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="YWh-HK-SLD"/>
                             <constraint firstItem="Etj-2D-MZk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="bWp-ce-Wcz"/>
+                            <constraint firstItem="TXJ-K1-w8N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="fFK-0H-0SC"/>
+                            <constraint firstItem="TXJ-K1-w8N" firstAttribute="top" secondItem="Etj-2D-MZk" secondAttribute="bottom" constant="50" id="ziR-6b-aqZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hA6-6l-Sfs"/>
+                    <connections>
+                        <outlet property="jumpBtn" destination="TXJ-K1-w8N" id="W5L-i3-ea3"/>
+                        <outlet property="limitBtn" destination="Etj-2D-MZk" id="dR2-ZM-lvn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

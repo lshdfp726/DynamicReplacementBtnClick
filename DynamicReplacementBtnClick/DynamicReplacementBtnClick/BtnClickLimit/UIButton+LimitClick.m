@@ -23,10 +23,7 @@ static void resetStatus() {
 @dynamic isOpen;
 
 +(void)load {
-    SEL originSEL = @selector(sendAction:to:forEvent:);
-    SEL defSEL    = @selector(defSendAction:to:forEvent:);
-    [self exchangeMethodSource:originSEL destion:defSEL];
-   
+  
 }
 
 + (void)exchangeMethodSource:(SEL)source destion:(SEL)dest {

@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *limitBtn;
+
+@property (strong, nonatomic) IBOutlet UIButton *jumpBtn;
 
 @end
 
