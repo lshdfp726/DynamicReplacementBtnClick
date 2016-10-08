@@ -11,5 +11,5 @@
 @interface UIButton (LimitClick)
 
 @property (assign, nonatomic) NSTimeInterval limitTime;
-
+@property (assign, nonatomic) BOOL isOpen;//是否打开方法替换，即是否需要限制点击  YES 需要  NO 不需要
 @end

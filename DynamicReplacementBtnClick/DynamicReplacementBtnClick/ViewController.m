@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIButton+LimitClick.h"
+#import "OtherVCViewController.h"
 @interface ViewController ()
 
 @end
@@ -22,6 +23,8 @@
 
 - (IBAction)clickAction:(id)sender {
     NSLog(@"正常点击");
+    OtherVCViewController *vc = [[OtherVCViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
