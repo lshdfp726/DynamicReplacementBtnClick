@@ -81,6 +81,10 @@ static void resetStatus() {
         SEL originSEL = @selector(defSendAction:to:forEvent:);
         SEL defSEL    = @selector(sendAction:to:forEvent:);
         [[self class] exchangeMethodSource:originSEL destion:defSEL];
+    }else {
+        SEL originSEL = @selector(sendAction:to:forEvent:);
+        SEL defSEL    = @selector(defSendAction:to:forEvent:);
+        [[self class] exchangeMethodSource:originSEL destion:defSEL];
     }
     objc_setAssociatedObject(self, @selector(isOpen), @(isOpen), OBJC_ASSOCIATION_ASSIGN);
 }
