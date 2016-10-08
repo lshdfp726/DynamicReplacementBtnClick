@@ -15,6 +15,7 @@
 		325F4F271DA8CD84008B1CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 325F4F251DA8CD84008B1CF9 /* LaunchScreen.storyboard */; };
 		325F4F321DA8CD84008B1CF9 /* DynamicReplacementBtnClickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 325F4F311DA8CD84008B1CF9 /* DynamicReplacementBtnClickTests.m */; };
 		325F4F3D1DA8CD84008B1CF9 /* DynamicReplacementBtnClickUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 325F4F3C1DA8CD84008B1CF9 /* DynamicReplacementBtnClickUITests.m */; };
+		325F4F4D1DA8D215008B1CF9 /* UIButton+LimitClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 325F4F4C1DA8D215008B1CF9 /* UIButton+LimitClick.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		325F4F381DA8CD84008B1CF9 /* DynamicReplacementBtnClickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicReplacementBtnClickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		325F4F3C1DA8CD84008B1CF9 /* DynamicReplacementBtnClickUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicReplacementBtnClickUITests.m; sourceTree = "<group>"; };
 		325F4F3E1DA8CD84008B1CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		325F4F4B1DA8D215008B1CF9 /* UIButton+LimitClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LimitClick.h"; sourceTree = "<group>"; };
+		325F4F4C1DA8D215008B1CF9 /* UIButton+LimitClick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LimitClick.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		325F4F161DA8CD84008B1CF9 /* DynamicReplacementBtnClick */ = {
 			isa = PBXGroup;
 			children = (
+				325F4F4A1DA8D201008B1CF9 /* BtnClickLimit */,
 				325F4F1A1DA8CD84008B1CF9 /* AppDelegate.h */,
 				325F4F1B1DA8CD84008B1CF9 /* AppDelegate.m */,
 				325F4F1D1DA8CD84008B1CF9 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				325F4F3E1DA8CD84008B1CF9 /* Info.plist */,
 			);
 			path = DynamicReplacementBtnClickUITests;
+			sourceTree = "<group>";
+		};
+		325F4F4A1DA8D201008B1CF9 /* BtnClickLimit */ = {
+			isa = PBXGroup;
+			children = (
+				325F4F4B1DA8D215008B1CF9 /* UIButton+LimitClick.h */,
+				325F4F4C1DA8D215008B1CF9 /* UIButton+LimitClick.m */,
+			);
+			path = BtnClickLimit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +291,7 @@
 			files = (
 				325F4F1F1DA8CD84008B1CF9 /* ViewController.m in Sources */,
 				325F4F1C1DA8CD84008B1CF9 /* AppDelegate.m in Sources */,
+				325F4F4D1DA8D215008B1CF9 /* UIButton+LimitClick.m in Sources */,
 				325F4F191DA8CD84008B1CF9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
